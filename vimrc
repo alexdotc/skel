@@ -9,10 +9,21 @@ syntax on
 "   shiftwidth        Determines the amount of whitespace to add in normal mode
 "   expandtab:        Use spaces instead of tabs
 
-set tabstop     =4
-set softtabstop =4
-set shiftwidth  =2
-set expandtab
-
-set number
-set relativenumber
+set   autoindent
+set   expandtab
+set nohlsearch
+set   ignorecase
+set   incsearch
+set   laststatus =2
+set   number
+set   relativenumber
+set   ruler
+set   shiftwidth  =2
+set   showcmd
+set   smartcase
+set   softtabstop =4
+set   splitbelow
+set   splitright
+set   tabstop     =4
+set   undodir=$HOME/.vimundo
+set   undofile
