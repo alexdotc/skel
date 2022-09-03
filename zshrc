@@ -1,7 +1,7 @@
 # Set up the prompt
 
 autoload -Uz promptinit
-pomptinit
+promptinit
 prompt default
 
 setopt histignorealldups sharehistory
