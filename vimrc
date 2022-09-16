@@ -27,3 +27,10 @@ set   splitright
 set   tabstop     =4
 set   undodir=$HOME/.vimundo
 set   undofile
+
+fun PythonSetup()
+    setl expandtab
+    setl shiftwidth =4
+endfun
+
+autocmd FileType python call PythonSetup()
