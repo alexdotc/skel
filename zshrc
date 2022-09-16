@@ -7,8 +7,8 @@ prompt default
 
 setopt histignorealldups sharehistory
 
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=4096
+SAVEHIST=4096
 HISTFILE=~/.zsh_history
 
 autoload -Uz compinit
