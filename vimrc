@@ -28,6 +28,10 @@ set   tabstop     =4
 set   undodir=$HOME/.vimundo
 set   undofile
 
+fun CSetup()
+    setl shiftwidth=4
+endfun
+
 fun PythonSetup()
     setl shiftwidth=4
 endfun
@@ -39,5 +43,6 @@ fun MakefileSetup()
     setl   tabstop=8
 endfun
 
+autocmd FileType lpc call CSetup() " lpc in $VIMRUNTIME/filetypes.vim .. 
 autocmd FileType python call PythonSetup()
 autocmd FileType make call MakefileSetup()
