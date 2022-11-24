@@ -30,7 +30,14 @@ set   undofile
 
 fun PythonSetup()
     setl expandtab
-    setl shiftwidth =4
+endfun
+
+fun MakefileSetup()
+    setl noexpandtab
+    setl shiftwidth=8
+    setl softtabstop=8
+    setl tabstop=8
 endfun
 
 autocmd FileType python call PythonSetup()
+autocmd FileType make call MakefileSetup()
