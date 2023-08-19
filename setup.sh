@@ -3,3 +3,4 @@
 cp vimrc $HOME/.vimrc
 cp tmux.conf $HOME/.tmux.conf
 cp zshrc $HOME/.zshrc
+cp gitconfig $HOME/.gitconfig

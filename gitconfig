@@ -1,0 +1,19 @@
+[user]
+	name = Alex Chavkin
+
+[core]
+    pager = less -F
+
+[alias]
+    rh = reset --hard
+    ci = commit
+    st = status
+
+[commit]
+    verbose = true
+
+[branch]
+    verbose = true
+
+[remote]
+    verbose = true
