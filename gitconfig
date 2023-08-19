@@ -1,5 +1,6 @@
 [user]
-	name = Alex Chavkin
+    name = Alex Chavkin
+    email = alexlchavkin@gmail.com
 
 [core]
     pager = less -F
