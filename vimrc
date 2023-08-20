@@ -33,6 +33,7 @@ fun CSetup()
 endfun
 
 fun PythonSetup()
+    setl expandtab
     setl shiftwidth=4
 endfun
 
@@ -43,6 +44,11 @@ fun MakefileSetup()
     setl   tabstop=8
 endfun
 
+fun GoSetup()
+    setl noexpandtab
+endfun
+
 autocmd FileType lpc call CSetup() " lpc in $VIMRUNTIME/filetypes.vim .. 
 autocmd FileType python call PythonSetup()
 autocmd FileType make call MakefileSetup()
+autocmd FileType go call GoSetup()
