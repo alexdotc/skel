@@ -1,5 +1,4 @@
-setopt autocd
-setopt vi
+# Set up the prompt
 
 autoload -Uz promptinit
 promptinit
@@ -7,10 +6,12 @@ prompt default
 
 setopt histignorealldups sharehistory
 
-HISTSIZE=4096
-SAVEHIST=4096
+# Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
+HISTSIZE=1000
+SAVEHIST=1000
 HISTFILE=~/.zsh_history
 
+# Use modern completion system
 autoload -Uz compinit
 compinit
 
@@ -34,6 +35,9 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
 export LANG=en_US.UTF-8
 export EDITOR='vim'
+set -o vi
 bindkey -M viins 'jj' vi-cmd-mode
 
 alias xc='xclip -selection clipboard'
+
+export GOPATH=$HOME/go
