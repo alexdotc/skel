@@ -2,7 +2,6 @@ nnoremap <silent> <C-l> :nohl<CR><C-l>
 inoremap jj <esc>
 
 syntax on
-
 " reminders:
 "   tabstop:          Width of \t
 "   softtabstop:      Fine tunes the amount of white space to be added
@@ -28,27 +27,28 @@ set   tabstop     =4
 set   undodir=$HOME/.vimundo
 set   undofile
 
-fun CSetup()
-    setl shiftwidth=4
-endfun
-
 fun PythonSetup()
     setl expandtab
-    setl shiftwidth=4
+    setl shiftwidth  =4
 endfun
 
 fun MakefileSetup()
     setl noexpandtab
-    setl   shiftwidth=8
-    setl   softtabstop=8
-    setl   tabstop=8
+    setl shiftwidth=8
+    setl softtabstop=8
+    setl tabstop=8
 endfun
 
 fun GoSetup()
     setl noexpandtab
 endfun
 
-autocmd FileType lpc call CSetup() " lpc in $VIMRUNTIME/filetypes.vim .. 
+fun RustSetup()
+    setl expandtab
+    setl shiftwidth  =4
+endfun
+
 autocmd FileType python call PythonSetup()
 autocmd FileType make call MakefileSetup()
 autocmd FileType go call GoSetup()
+autocmd FileType rust call RustSetup()
