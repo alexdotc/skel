@@ -1,17 +1,13 @@
-# Set up the prompt
-
 autoload -Uz promptinit
 promptinit
 prompt default
 
 setopt histignorealldups sharehistory
 
-# Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=10000
+SAVEHIST=10000
 HISTFILE=~/.zsh_history
 
-# Use modern completion system
 autoload -Uz compinit
 compinit
 
@@ -39,5 +35,5 @@ set -o vi
 bindkey -M viins 'jj' vi-cmd-mode
 
 alias xc='xclip -selection clipboard'
-
-export GOPATH=$HOME/go
+alias grh='git reset --hard'
+alias awx='awx -f human'
