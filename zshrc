@@ -37,3 +37,4 @@ bindkey -M viins 'jj' vi-cmd-mode
 alias xc='xclip -selection clipboard'
 alias grh='git reset --hard'
 alias awx='awx -f human'
+alias nvenv='python -m venv'
