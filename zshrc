@@ -39,11 +39,13 @@ alias grh='git reset --hard'
 alias awx='awx -f human'
 
 ## python venv ## 
-alias venvn='python -m venv'
-alias venvd='deactivate'
 
 VENVDIR="$HOME/.venvs"
-
 venva () {
   source $VENVDIR/${1}/bin/activate
 }
+
+venvn () {
+  python -m venv $VENVDIR/${1}
+}
+alias venvd='deactivate'
