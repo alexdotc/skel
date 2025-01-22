@@ -40,6 +40,7 @@ alias awx='awx -f human'
 
 ## python venv ## 
 alias venvn='python -m venv'
+alias venvd='deactivate'
 
 VENVDIR="$HOME/.venvs"
 
