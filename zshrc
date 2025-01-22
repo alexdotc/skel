@@ -37,4 +37,12 @@ bindkey -M viins 'jj' vi-cmd-mode
 alias xc='xclip -selection clipboard'
 alias grh='git reset --hard'
 alias awx='awx -f human'
-alias nvenv='python -m venv'
+
+## python venv ## 
+alias venvn='python -m venv'
+
+VENVDIR="$HOME/.venvs"
+
+venva () {
+  source $VENVDIR/${1}/bin/activate
+}
